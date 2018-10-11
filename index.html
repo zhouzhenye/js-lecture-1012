@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>テクノロジー（藤原）JavaScript練習用ページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1>テクノロジー（藤原）JavaScript練習用ページ</h1>
+    <ul>
+        <li>Google Chromeを開き、デベロッパーツールを開いてください。</li>
+        <ul>
+            <li>Windows: F12</li>
+            <li>macOS: command + option + I</li>
+        </ul>
+    </ul>
+
+    <!-- 参考：外部ファイルのJavaScript（js/main.js）を読み込む場合 -->
+    <script src="js/main.js"></script>
+
+    <!-- 参考：JavaScriptをHTMLに直接書く場合 -->
+    <script>
+        // ここにJavaScriptコードを書ける
+        // （今日の演習では使わない）
+    </script>
+
+    <!-- 以下は触らない（タブを閉じるときに警告を出すためのコード） -->
+    <script>
+    window.addEventListener('beforeunload', function(e) {
+        e.returnValue = 'タブを閉じるとConsoleのログが消えます。閉じたい場合はConsoleのログをコピーしておいてください。';
+    }, false);
+    </script>
+</body>
+
+</html>
